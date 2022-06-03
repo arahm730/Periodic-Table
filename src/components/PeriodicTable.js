@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import data from "./elements.json";
+import data from "../elements.json";
 import Element from "./Element";
 import Infographic from "./Infographic";
-
+import "./PeriodicTable.css";
 
 const PeriodicTable = () => {
 

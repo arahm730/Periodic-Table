@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import PeriodicTable from './PeriodicTable';
+import PeriodicTable from '../src/components/PeriodicTable';
 
 function App() {
   return (

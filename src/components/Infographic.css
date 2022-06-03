@@ -1,0 +1,15 @@
+.infographic-container {
+  grid-column: 3/13;
+  grid-row: 2/4;
+  background-color: salmon;
+  border: 1px solid black;
+
+  /* new */
+  display: grid;
+  grid-template-columns: repeat(10, 80px);
+  grid-template-rows: repeat(2, 80px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

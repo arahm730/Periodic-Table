@@ -1,0 +1,31 @@
+.large-element-square {
+  border: 1px solid black;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background-color: white;
+}
+
+.popout-number {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  float: left;
+  padding-left: 12px;
+  color: black;
+}
+
+.popout-symbol {
+  font-weight: bold;
+  text-align: center;
+  font-size: 45px;
+  margin: 0 auto;
+  padding-top: 25px;
+  color: black;
+}
+
+.popout-name {
+  bottom: 0;
+  font-size: 23px;
+  text-align: center;
+  color: black;
+}
