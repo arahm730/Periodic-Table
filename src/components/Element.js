@@ -2,7 +2,6 @@ import React from "react";
 import "./Element.css";
 
 const Element = ({ setDisplayedElement, clickedElement, element }) => {
-
   const groupColors = {
     "alkali metal": "#ff0000",
     "alkaline earth metal": "#744700",
@@ -16,15 +15,27 @@ const Element = ({ setDisplayedElement, clickedElement, element }) => {
     lanthanide: "#c90076",
     metalloid: "#b6d7a8",
     "unknown, probably metalloid": "#b6d7a8",
-    "noble gas": "#FFBC42",
+    "noble gas": "gold",
     "unknown, predicted to be noble gas": "#FFBC42",
   };
 
   return (
     <div
       className="element"
-      style={{ gridColumn: element.xpos, gridRow: element.ypos, backgroundColor: groupColors[element.category] }}
-      onClick={() => {clickedElement(); setDisplayedElement(element);}}
+      style={{
+        height: 77.5,
+        gridColumn:
+          (element.number > 56 && element.number < 72) ||
+          (element.number > 88 && element.number < 104)
+            ? element.xpos + 1
+            : element.xpos,
+        gridRow: element.ypos,
+        backgroundColor: groupColors[element.category],
+      }}
+      onClick={() => {
+        clickedElement();
+        setDisplayedElement(element);
+      }}
     >
       <div className="number">{element.number}</div>
       <br />

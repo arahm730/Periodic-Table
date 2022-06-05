@@ -1,22 +1,35 @@
-import React from 'react'
-import "./ElementDescription.css"
+import React from "react";
+import "./ElementDescription.css";
+import Detail from "./Detail";
 
-const ElementDescription = ({element}) => {
+const ElementDescription = ({ element }) => {
+  const details = {
+    "Category": [element.category, null],
+    "Mass": [element.atomic_mass, "grams"],
+    "Density": [element.density, "grams/mol"],
+    "Affinity": [element.electron_affinity, "kJ/mol"],
+    "Boiling": [element.boil, "Celsius"],
+    "Melting": [element.melt, "Celsius"],
+    "Config": [element.electron_configuration_semantic, null],
+  };
+
   return (
     <div className="description">
-      <span>Atomic mass: {element.atomic_mass}</span>
-      <span>Boiling Point: {element.boil}</span>
-      <span>Melting Point: {element.melt}</span>
-      <span>Molar heat: {element.molar_heat}</span>
-      <span>Density: {element.density}</span>
-      <span>
-        Electronic Configuration: {element.electron_configuration_semantic}
-      </span>
+      {Object.entries(details).map(([name, value]) => (
+        <Detail name={name} value={value} />
+      ))}
       <div className="summary">
-        <span>{element.summary}</span>
+        <p>
+          {element.summary.slice(0, 310)}
+          {element.summary.length > 310 ? (
+            <a href={element.source}>...See more</a>
+          ) : (
+            <a href={element.source}>Source</a>
+          )}
+        </p>
       </div>
     </div>
   );
-}
+};
 
-export default ElementDescription
+export default ElementDescription;

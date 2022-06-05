@@ -3,7 +3,11 @@ import PeriodicTable from '../src/components/PeriodicTable';
 
 function App() {
   return (
-    <PeriodicTable/>
+    <div className='app'>
+      <header>a</header>
+      <PeriodicTable />
+      <footer>b</footer>
+    </div>
   );
 }
 
