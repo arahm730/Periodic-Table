@@ -1,7 +1,7 @@
-import React from 'react'
-import "./ElementPopOut.css"
+import React from "react";
+import "./ElementPopOut.css";
 
-const ElementPopOut = ({element}) => {
+const ElementPopOut = ({ element }) => {
   return (
     <div className="large-element-square">
       <div className="popout-number">{element.number}</div>
@@ -13,6 +13,6 @@ const ElementPopOut = ({element}) => {
       </div>
     </div>
   );
-}
+};
 
-export default ElementPopOut
+export default ElementPopOut;

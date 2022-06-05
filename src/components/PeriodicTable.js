@@ -5,14 +5,12 @@ import Infographic from "./Infographic";
 import "./PeriodicTable.css";
 
 const PeriodicTable = () => {
-
-  const [infoComponent, setInfoComponent] = useState(false)     // will not show infographic when page is first loaded
+  const [infoComponent, setInfoComponent] = useState(false); // will not show infographic when page is first loaded
   const [displayedElement, setDisplayedElement] = useState([]);
 
   function clickedElement() {
-    setInfoComponent(true)
+    setInfoComponent(true);
   }
-
 
   return (
     <div className="periodic-table">

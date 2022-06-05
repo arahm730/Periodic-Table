@@ -23,7 +23,6 @@ const Element = ({ setDisplayedElement, clickedElement, element }) => {
     <div
       className="element"
       style={{
-        height: 77.5,
         gridColumn:
           (element.number > 56 && element.number < 72) ||
           (element.number > 88 && element.number < 104)

@@ -4,13 +4,13 @@ import Detail from "./Detail";
 
 const ElementDescription = ({ element }) => {
   const details = {
-    "Category": [element.category, null],
-    "Mass": [element.atomic_mass, "grams"],
-    "Density": [element.density, "grams/mol"],
-    "Affinity": [element.electron_affinity, "kJ/mol"],
-    "Boiling": [element.boil, "Celsius"],
-    "Melting": [element.melt, "Celsius"],
-    "Config": [element.electron_configuration_semantic, null],
+    Category: [element.category, null],
+    Mass: [element.atomic_mass, "grams"],
+    Density: [element.density, "grams/mol"],
+    Affinity: [element.electron_affinity, "kJ/mol"],
+    Boiling: [element.boil, "Celsius"],
+    Melting: [element.melt, "Celsius"],
+    Config: [element.electron_configuration_semantic, null],
   };
 
   return (

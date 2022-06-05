@@ -1,9 +1,9 @@
 .periodic-table {
   display: grid;
   grid-template-columns: repeat(18, 80px);
-  grid-template-rows: repeat(8, 80px);
+  grid-template-rows: repeat(10, 80px);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }

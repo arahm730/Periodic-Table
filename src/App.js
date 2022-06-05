@@ -3,10 +3,12 @@ import PeriodicTable from '../src/components/PeriodicTable';
 
 function App() {
   return (
-    <div className='app'>
-      <header>a</header>
+    <div className="app">
+      <header>
+        <h1>Interactive Periodic Table</h1>
+      </header>
       <PeriodicTable />
-      <footer>b</footer>
+      <footer>© 2022 A Rahman</footer>
     </div>
   );
 }

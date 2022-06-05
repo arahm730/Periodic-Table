@@ -1,3 +1,5 @@
+Site can be found at this link: https://arahm730.github.io/periodic-table/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
