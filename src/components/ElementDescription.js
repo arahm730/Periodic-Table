@@ -2,7 +2,7 @@ import React from "react";
 import "./ElementDescription.css";
 import Detail from "./Detail";
 
-const ElementDescription = ({ element }) => {
+const ElementDescription = ({ element, groupColors }) => {
   const details = {
     Category: [element.category, null],
     Mass: [element.atomic_mass, "grams"],
@@ -15,8 +15,14 @@ const ElementDescription = ({ element }) => {
 
   return (
     <div className="description">
-      {Object.entries(details).map(([name, value]) => (
-        <Detail name={name} value={value} />
+      {Object.entries(details).map(([name, value, index]) => (
+        <Detail
+          key={name}
+          name={name}
+          value={value}
+          groupColors={groupColors}
+          element={element}
+        />
       ))}
       <div className="summary">
         <p>

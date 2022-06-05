@@ -1,18 +1,19 @@
 import React from "react";
 import "./Detail.css";
 
-const Detail = ({ name, value }) => {
+const Detail = ({ element, name, value, groupColors }) => {
   return (
-    <div className={`single-detail ${name === "Category" ? "doubled" : ""}`}>
+    <div
+      className={`single-detail ${name === "Category" ? "doubled" : ""}`}
+      style={name === "Category" ? {backgroundColor: groupColors[element.category]} : {backgroundColor: ""} }
+    >
       <div className="detail-name">
         <span>{name}</span>
       </div>
       <div
         className={`detail-value ${
           name === "Category" && value[0].length > 30 ? "smaller-category" : ""
-        } ${
-          name === "Config" && value[0].length > 16 ? "smaller-config" : ""
-        }`}
+        } ${name === "Config" && value[0].length > 16 ? "smaller-config" : ""}`}
       >
         <span>
           {value[0]
