@@ -32,3 +32,15 @@ p {
     text-align: center;
 }
 
+@media screen and (max-width: 1400px) {
+  .number {
+    font-size: 12px;
+}
+.symbol { 
+    font-size: 20px;
+}
+
+.name {
+    font-size: 0px;
+}
+}

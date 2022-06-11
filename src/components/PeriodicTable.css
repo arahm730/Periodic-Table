@@ -1,9 +1,18 @@
 .periodic-table {
   display: grid;
-  grid-template-columns: repeat(18, 80px);
-  grid-template-rows: repeat(10, 80px);
+  grid-template-columns: repeat(18, 70px);
+  grid-template-rows: repeat(10, 70px);
+  margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 1400px) {
+  .periodic-table {
+    grid-template-columns: repeat(18, 50px);
+    grid-template-rows: repeat(10, 50px);
+  } 
 }

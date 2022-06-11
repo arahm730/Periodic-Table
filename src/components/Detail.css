@@ -1,5 +1,5 @@
 .single-detail {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   position: relative;
   font-weight: bold;
@@ -16,7 +16,6 @@
 
 .detail-value {
   text-align: center;
-  /* vertical-align: top; */
   font-weight: bold;
 }
 
@@ -25,11 +24,26 @@
 }
 
 .smaller-config {
-  font-size: 14px;
+  font-size: 11px;
   height: 40px;
-  padding-top: 5px;
+  padding-top: 1px;
 }
 
 .smaller-category {
-  font-size: 16px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1400px) {
+  .detail-name {
+  line-height: 20px;
+}
+.single-detail {
+  font-size: 10px;
+}
+.smaller-config {
+  font-size: 8px;}
+.smaller-category {
+  font-size: 10px;
+}
+
 }

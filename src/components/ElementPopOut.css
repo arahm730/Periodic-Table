@@ -25,7 +25,20 @@
 
 .popout-name {
   bottom: 0;
-  font-size: 23px;
+  font-size: 21px;
   text-align: center;
   color: black;
+}
+
+
+@media screen and (max-width: 1400px) {
+.popout-number {
+  font-size: 30px;}
+.popout-symbol {
+padding-top: 10px;
+  font-size: 25px;
+}
+.popout-name {
+  font-size: 15px;}
+
 }

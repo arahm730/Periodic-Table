@@ -1,5 +1,5 @@
-import './App.css';
-import PeriodicTable from '../src/components/PeriodicTable';
+import "./App.css";
+import PeriodicTable from "../src/components/PeriodicTable";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <header>
         <h1>Interactive Periodic Table</h1>
       </header>
-      <PeriodicTable />
+        <PeriodicTable />
       <footer>© 2022 A Rahman</footer>
     </div>
   );

@@ -4,10 +4,17 @@
   background-color: salmon;
   border: 1px solid black;
   display: grid;
-  grid-template-columns: repeat(10, 80px);
-  grid-template-rows: repeat(2, 80px);
+  grid-template-columns: repeat(10, 70px);
+  grid-template-rows: repeat(2, 70px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+@media screen and (max-width: 1400px) {
+.infographic-container {
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(2, 50px);
+}}
